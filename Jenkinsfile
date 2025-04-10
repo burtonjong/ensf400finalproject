@@ -42,16 +42,16 @@ pipeline {
                     sh 'chmod +x ./gradlew'
                     // Run gradlew inside the container using the container ID
                     sh "./gradlew build --no-daemon"
-                    sh "./gradlew -Dlog4j2.disableJmx=true -Dlog4j.shutdownHookEnabled=false apprun"
+                    sh './gradlew check'
                 }
             }
         }
     }
     
-    post {
-        always {
-            // Cleanup: kill the background process if running
-            sh 'pkill -f apprun || true'  // Replace with the specific command to stop the app if necessary
-        }
-    }
+    // post {
+    //     always {
+    //         // Cleanup: kill the background process if running
+    //         sh 'pkill -f apprun || true'  // Replace with the specific command to stop the app if necessary
+    //     }
+    // }
 }
