@@ -1,4 +1,4 @@
-Group: Burton Jong, Braden Huang, Jin Kim, Sebastian Nieto
+/Group: Burton Jong, Braden Huang, Jin Kim, Sebastian Nieto
 
 ## Demo - demonstrates an application and tests
 
