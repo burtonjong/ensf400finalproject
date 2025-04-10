@@ -285,6 +285,7 @@ sonarqube {
         property "sonar.coverage.jacoco.xmlReportPaths", "build/jacoco/jacoco.xml"
         property "sonar.login", "admin"
         property "sonar.password", "admin1"
+        property "sonar.host.url", "https://potential-space-funicular-7v9rj49x4j7hxqp7-9000.app.github.dev"
     }
 }
 
